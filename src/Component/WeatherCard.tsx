@@ -66,8 +66,8 @@ export default function WeatherDisplay({
   const [filteredHourly, setFilteredHourly] = useState<HourlyForecast[]>([])
   const [selectedDay, setSelectedDay] = useState<string>('')
   const [loading, setLoading] = useState(false)
-  const [inputValue, setInputValue] = useState('Lagos')
-  const [city, setCity] = useState('Lagos')
+  const [inputValue, setInputValue] = useState<string>('')
+  const [city, setCity] = useState<string>('Berlin, Germany')
   const [error, setError] = useState('')
   const [serverError, setServerError] = useState(false)
   const [currentTime, setCurrentTime] = useState('')
@@ -329,7 +329,7 @@ export default function WeatherDisplay({
         <main className="text-white">
           {/* Search Section */}
           <section className="Search mx-6 flex flex-col items-center justify-center">
-            <h1 className="font-bold text-2xl mb-2 how_work">
+            <h1 className="font-bold text-2xl mb-2 how_work md:text-4xl">
               How's the sky looking today?
             </h1>
             <div className="relative w-full my-5 md:flex items-center justify-center md:gap-5 ">
@@ -359,7 +359,7 @@ export default function WeatherDisplay({
               {/* Weather Display */}
               <section className="mx-6">
                 {loading ? (
-                  <div className="relative rounded-2xl animate-pulse flex flex-col items-center justify-center h-[300px] md:h-[400px] bg-[#2f2f49]">
+                  <div className="relative rounded-2xl animate-pulse flex flex-col items-center justify-center h-[300px] md:h-[300px] md:w-[900px] bg-[#2f2f49]">
                     <div className="flex items-center justify-center space-x-2">
                       <span className="w-2 h-2 bg-gray-400 rounded-full animate-bounce [animation-delay:-0.3s]"></span>
                       <span className="w-2 h-2 bg-gray-400 rounded-full animate-bounce [animation-delay:-0.15s]"></span>
@@ -379,10 +379,10 @@ export default function WeatherDisplay({
                     >
                       <div className="z-10 w-full px-3 py-20 rounded-2xl text-center md:flex items-center justify-between px-15 md:px-20">
                         <div>
-                          <h3 className="font-bold text-5xl pb-3 capitalize">
+                          <h3 className="font-bold text-3xl pb-3 capitalize">
                             {city}
                           </h3>
-                          <p className="text-gray-300">{currentTime}</p>
+                          <p className="text-gray-300 w-fit">{currentTime}</p>
                         </div>
 
                         <div className="flex justify-center gap-7 items-center  md:gap-10 mt-6">
