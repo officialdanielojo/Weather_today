@@ -1,0 +1,58 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'Bricolage';
+  src: url('/src/assets/fonts/Bricolage_Grotesque/static/BricolageGrotesque-Bold.ttf')
+      format('ttf'),
+    url('/src/assets/fonts/Bricolage_Grotesque/static/BricolageGrotesque-Bold.ttf')
+      format('woff');
+  /* font-weight: 400;
+  font-style: normal; */
+}
+
+@font-face {
+  font-family: 'DM_Sans';
+  src: url('/src/assets/fonts/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf')
+      format('woff'),
+    url('/src/assets/fonts/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf')
+      format('woff');
+  /* font-weight: 700;
+  font-style: normal; */
+}
+
+:root {
+  font-family: 'DM_Sans';
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #03012d;
+
+  /* font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
+
+.how_work {
+  font-family: 'Bricolage';
+}
+/* Custom scrollbar styling */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  margin-inline: 2px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #2f2f49;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #2f2f49;
+}
+
+@media (prefers-color-scheme: light) {
+  /* :root {
+    color: #213547;
+    background-color: #ffffff;
+  } */
+}
