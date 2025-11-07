@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.16",
+    "@vercel/analytics": "^1.5.0",
+    "analytics": "github:vercel/analytics",
     "framer-motion": "^12.23.24",
     "lucide-react": "^0.548.0",
     "react": "^19.1.1",
