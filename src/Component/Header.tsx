@@ -62,7 +62,7 @@ export default function Header({
 
   return (
     <header className="flex items-center justify-between my-8 px-6 md:px-35">
-      <img src={Logo} alt="Weather logo" className="w-30 md:w-32" />
+      <img src={Logo} alt="Weather logo" className="w-30 md:w-40" />
 
       <div className="relative" ref={dropdownRef}>
         <button
