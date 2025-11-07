@@ -377,15 +377,15 @@ export default function WeatherDisplay({
                       className="relative bg-cover bg-center rounded-2xl transition-all duration-700 flex flex-col items-center justify-center"
                       style={{ backgroundImage: `url(${bgImage})` }}
                     >
-                      <div className="z-10 w-full px-3 py-20 rounded-2xl text-center md:flex items-center justify-between md:px-20">
+                      <div className="z-10 w-full px-3 py-20 rounded-2xl text-center md:flex items-center justify-between px-15 md:px-20">
                         <div>
-                          <h3 className="font-bold text-4xl pb-3 capitalize">
+                          <h3 className="font-bold text-5xl pb-3 capitalize">
                             {city}
                           </h3>
                           <p className="text-gray-300">{currentTime}</p>
                         </div>
 
-                        <div className="flex justify-center items-center gap-40 md:gap-10 mt-6">
+                        <div className="flex justify-between items-center  md:gap-10 mt-6">
                           <img
                             src={
                               weatherImages[
