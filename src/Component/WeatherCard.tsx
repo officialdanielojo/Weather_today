@@ -329,7 +329,7 @@ export default function WeatherDisplay({
         <main className="text-white">
           {/* Search Section */}
           <section className="Search mx-6 flex flex-col items-center justify-center">
-            <h1 className="font-bold text-2xl mb-2 how_work md:text-4xl">
+            <h1 className="font-bold text-2xl text-center mb-2 how_work md:text-4xl">
               How's the sky looking today?
             </h1>
             <div className="relative w-full my-5 md:flex items-center justify-center md:gap-5 ">
