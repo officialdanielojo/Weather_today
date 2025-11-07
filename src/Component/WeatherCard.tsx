@@ -385,7 +385,7 @@ export default function WeatherDisplay({
                           <p className="text-gray-300">{currentTime}</p>
                         </div>
 
-                        <div className="flex justify-between items-center  md:gap-10 mt-6">
+                        <div className="flex justify-center gap-7 items-center  md:gap-10 mt-6">
                           <img
                             src={
                               weatherImages[
