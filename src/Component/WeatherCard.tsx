@@ -382,7 +382,9 @@ export default function WeatherDisplay({
                           <h3 className="font-bold text-3xl pb-3 capitalize">
                             {city}
                           </h3>
-                          <p className="text-gray-300 w-fit">{currentTime}</p>
+                          <p className="text-gray-300 md:w-fit">
+                            {currentTime}
+                          </p>
                         </div>
 
                         <div className="flex justify-center gap-7 items-center  md:gap-10 mt-6">
