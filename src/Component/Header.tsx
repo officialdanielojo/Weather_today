@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ChevronDown, ChevronUp, Settings, Check } from 'lucide-react'
+import { ChevronDown, Settings, Check } from 'lucide-react'
 import Logo from '../assets/images/logo.svg'
 
 export type UnitSelection = {
@@ -75,7 +75,7 @@ export default function Header({
             animate={{ rotate: open ? 180 : 0 }}
             transition={{ duration: 0.25 }}
           >
-            {open ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+            <ChevronDown size={16} />
           </motion.div>
         </button>
 
